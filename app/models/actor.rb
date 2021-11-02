@@ -5,4 +5,9 @@ class Actor < ApplicationRecord
   def self.average_age
     average(:age)
   end
+
+  # def coactors
+  #   wip = Actor.joins(movies: :actor_movies).where()
+  #
+  # end
 end

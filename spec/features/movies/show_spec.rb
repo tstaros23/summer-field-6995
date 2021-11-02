@@ -44,7 +44,4 @@ RSpec.describe 'movies show page' do
     expect(current_path).to eq("/movies/#{movie2.id}")
     expect(page).to have_content(chris_farley.name)
   end
-
-  
-
 end

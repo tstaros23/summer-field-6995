@@ -19,7 +19,6 @@ RSpec.describe Actor, type: :model do
         ActorMovie.create!(actor_id: chris_farley.id, movie_id: movie.id)
         ActorMovie.create!(actor_id: david_spade.id, movie_id: movie.id)
 
-
         expect(Actor.average_age).to eq(40)
       end
     end
@@ -27,7 +26,7 @@ RSpec.describe Actor, type: :model do
 
   describe 'instance methods' do
     describe '#coactors' do
-      it "finds all of the actors the actor has worked with, distinct " do
+      xit "finds all of the actors the actor has worked with, distinct " do
         studio = Studio.create!(name: 'Universal', location: 'Orlando')
         movie = Movie.create!(title: 'Jaws', creation_year: 2016, genre: 'Horror', studio_id: studio.id)
         movie2 = Movie.create!(title: 'Happy Gilmore', creation_year: 1996, genre: 'Comedy', studio_id: studio.id)
