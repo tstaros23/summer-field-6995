@@ -11,9 +11,11 @@ RSpec.describe 'studio index page' do
     movie4 = Movie.create!(title: 'Halloween', studio_id: studio2.id)
 
     visit '/studios'
-
+    
     expect(page).to have_content(studio.name)
     expect(page).to have_content(studio.location)
+    expect(page).to have_content(studio2.name)
+    expect(page).to have_content(studio2.location)
 
     expect(page).to have_content(movie.title)
     expect(page).to have_content(movie2.title)

@@ -45,4 +45,6 @@ RSpec.describe 'movies show page' do
     expect(page).to have_content(chris_farley.name)
   end
 
+  
+
 end
